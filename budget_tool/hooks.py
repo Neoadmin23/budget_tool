@@ -145,6 +145,12 @@ app_license = "mit"
 # 	}
 # }
 
+doc_events = {
+    "Journal Entry": {
+        "after_submit": "budget_tool.budget_tool.utils.update_budget_consumed_amount"
+    }
+}
+
 # Scheduled Tasks
 # ---------------
 
@@ -241,4 +247,6 @@ app_license = "mit"
 # default_log_clearing_doctypes = {
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
+
+
 

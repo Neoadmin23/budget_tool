@@ -1,0 +1,66 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-04-14 12:39:56.533106",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "month",
+  "monthly_budget",
+  "consumed_amount",
+  "remaining_budget",
+  "rollover_amount"
+ ],
+ "fields": [
+  {
+   "fieldname": "month",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Month",
+   "options": "January\nFebruary\nMarch\nApril\nMay\nJune\nJuly\nAugust\nSeptember\nOctober\nNovember\nDecember"
+  },
+  {
+   "fieldname": "monthly_budget",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Monthly Budget",
+   "reqd": 1
+  },
+  {
+   "fieldname": "consumed_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Consumed Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "remaining_budget",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Remaining Budget",
+   "read_only": 1
+  },
+  {
+   "fieldname": "rollover_amount",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Rollover Amount",
+   "read_only": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-04-14 14:39:16.091091",
+ "modified_by": "Administrator",
+ "module": "Budget Tool",
+ "name": "Monthly Budget",
+ "owner": "ahmadpashashaiks@gmail.com",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

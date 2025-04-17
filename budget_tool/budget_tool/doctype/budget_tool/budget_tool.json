@@ -1,0 +1,89 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-04-17 16:22:53.662214",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_1pan",
+  "amended_from",
+  "fiscal_year",
+  "account",
+  "total_budget",
+  "company",
+  "monthly_budgets"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_1pan",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "hidden": 1,
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Budget Tool",
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "custom_fiscal_year",
+   "fieldtype": "Link",
+   "label": "Fiscal Year",
+   "options": "Fiscal Year"
+  },
+  {
+   "fieldname": "custom_accounts",
+   "fieldtype": "Link",
+   "label": "Account",
+   "options": "Account"
+  },
+  {
+   "fieldname": "custom_total_budget",
+   "fieldtype": "Currency",
+   "label": "Total Budget"
+  },
+  {
+   "fieldname": "custom_company",
+   "fieldtype": "Link",
+   "label": "Company",
+   "options": "Company"
+  },
+  {
+   "fieldname": "monthly_budgets",
+   "fieldtype": "Table",
+   "label": "Monthly Budgets",
+   "options": "Monthly Budget"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-04-17 16:26:31.108800",
+ "modified_by": "Administrator",
+ "module": "Budget Tool",
+ "name": "Budget Tool",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
